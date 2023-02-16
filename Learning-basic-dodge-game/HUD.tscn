@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://HUD.gd" type="Script" id=2]
+
+[sub_resource type="Theme" id=1]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="ScoreLable" type="Label" parent="."]
+margin_left = 34.0
+margin_top = 22.0
+margin_right = 176.0
+margin_bottom = 74.0
+theme = SubResource( 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "0"
+align = 1
+
+[node name="MessageLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -104.0
+margin_right = 512.0
+margin_bottom = -28.0
+custom_fonts/font = ExtResource( 1 )
+text = "Why did I make this"
+align = 1
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -81.5
+margin_top = -17.0
+margin_right = 81.5
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 1 )
+text = "start"
+
+[node name="MessageTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="timeout" from="MessageTimer" to="." method="_on_MessageTimer_timeout"]
