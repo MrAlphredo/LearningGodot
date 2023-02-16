@@ -6,7 +6,11 @@ It is meant to share all the resources that helped me learn the godot engine, in
 
 Check out [GDQuest](https://www.youtube.com/@Gdquest)! Their channel helped me jump start my game dev journey.
 
-==================================================================================
+===================
+
+===================
+
+---
 
 ###Learning project - using signals
 
