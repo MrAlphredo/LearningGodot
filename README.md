@@ -27,6 +27,7 @@ key points: Timer, signals linking, vector2d, movement, velocity, rotation
 
 ###Learning project - basic dodge game
 
+
 *-better timer use
 
 -animation sprites
@@ -44,3 +45,20 @@ key points: Timer, signals linking, vector2d, movement, velocity, rotation
 -fonts and labels
 
 -Node groups*
+
+---
+
+###cat-rat game
+
+
+*-animation player
+
+-player mouse tracking
+
+-bullet interactions
+
+-proper death animation and queue free order (rat.gd)
+
+-linking signals with script
+
+-audio*
